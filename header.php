@@ -82,8 +82,8 @@
                             Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a id="Services" class="dropdown-item" href="<?php echo $htmlroot;?>services/contact.php?service=web development">Web Development</a></li>
-                            <li><a class="dropdown-item" href="<?php echo $htmlroot;?>services/contact.php?service=Server Administration">Server Administration</a></li>
+                            <li><a id="Services" class="dropdown-item" href="<?php echo $htmlroot;?>contact.php?service=web development">Web Development</a></li>
+                            <li><a class="dropdown-item" href="<?php echo $htmlroot;?>contact.php?service=Server Administration">Server Administration</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#"> Application Development</a></li>
                         </ul>
