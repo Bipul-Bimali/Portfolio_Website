@@ -1,6 +1,74 @@
 <?php 
-include "/home/vol1_4/infinityfree.com/if0_34795783/htdocs/config.php";
+include __DIR__. '/config.php';
 ?>
+
+
+
+
+
+<?php
+
+$meta = [
+    'charset' => 'UTF-8',
+    'viewport' => 'width=device-width, initial-scale=1.0',
+    'description' => 'Bipul Bimali - Passionate Cybersecurity Enthusiast working towards making a safer digital world',
+    'keywords' => 'Bipul Bimali, Cybersecurity, Web Development, Software Developer',
+    'author' => 'Bipul Bimali',
+    'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
+    'og' => [
+        'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
+        'description' => 'Bipul Bimali is a well-versed web and software developer with experience in network administration',
+        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+        'url' => 'https://bipulbimali.com.np/index.php',
+        'type' => 'Portfolio website'
+    ]
+];
+
+
+
+$assets = [
+    // --- CSS Assets ---
+    'css' => [
+        // 1. Primary Stylesheet
+        [
+            'path' => 'bootstrap-5.3.3/dist/css/bootstrap.min.css',
+            'attributes' => '' 
+        ],
+        // 2. Example: Print-only stylesheet
+        [
+            // 'path' => 'css/print-styles.css',
+            // 'attributes' => 'media="print"' 
+        ]
+    ],
+    
+    // --- JavaScript Assets ---
+    'js' => [
+        // 1. Bootstrap Bundle (Critical library)
+        [
+            'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
+           // 'attributes' => 'defer' // Recommended for performance
+        ],
+        // 2. Custom Main Script (Your logic)
+        [
+            'path' => 'javascript/main.js',
+            // Example of multiple attributes: defer and a custom ID
+            'attributes' => 'defer id="main-script"' 
+        ],
+        // 3. Example: External script that requires 'async'
+        [
+            // 'path' => 'https://example.com/analytics.js',
+            // 'attributes' => 'async' 
+        ]
+    ],
+    
+    // --- Other Assets ---
+    'favicon' => 'icon/icon.svg'
+];
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <?php 
