@@ -106,7 +106,10 @@ include $phproot."head.php";
 </body>
 </html>
 <?php
-require_once $phproot."php/dbconn.php";
+require_once $phproot."php/Dbconn.php";
+
+
+
 if($_SERVER['REQUEST_METHOD']=="POST"){
     if($_POST["Full_name"]&&$_POST["Email"]&&$_POST["Message"]){
         $name = $_POST['Full_name'];
@@ -115,18 +118,17 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $email = stripslashes($email);
         strpos($email,"@");
         $Message = $_POST['Message'];
-        $statement = "INSERT INTO messages Values (NULL,'$name','$email','$Message')";
-        // echo $statement;99
+        $statement = "INSERT INTO Messages (`Full Name`, `Email`, `Message`, `Category`) Values ('$name','$email','$Message',NULL)";
+               // echo $statement;
         if($conn->query($statement)){
-            echo "Message has been submitted." ;
             require_once $phproot."php/mailconfig.php";
-            $msg = "First line of text\nSecond line of text";
+          if (sendContactMail($name, $email, $Message, $mailConfig)) {
+              echo "Message has been submitted and email sent.";
+          }
+          else {
+            echo "Message saved, but email could not be sent.";
+          }
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-
-// send email
-echo mail("bipulbimali@gmail.com","My subject",$msg);
         }
         else{
             echo "Error sending message try again Later";
