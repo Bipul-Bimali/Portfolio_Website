@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email Notification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
+    .header {
+      background: #0073e6;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .content {
+      margin: 20px 0;
+    }
+    .footer {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Portfolio Website Notification</h2>
+    </div>
+    <div class="content">
+      <p>Hello {{name}},</p>
+      <p>{{message}}</p>
+      <p>Date: {{date}}</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Bipul Bimali | All rights reserved</p>
+    </div>
+  </div>
+</body>
+</html>
