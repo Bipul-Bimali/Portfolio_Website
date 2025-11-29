@@ -75,7 +75,7 @@ $assets = [
 include $phproot."head.php";
 ?>
 <script src="<?php echo $htmlroot;?>javascript/validation.js"></script>
-<body>
+<body data-bs-theme="dark">
     <main> 
         <?php 
         include $phproot."header.php";
