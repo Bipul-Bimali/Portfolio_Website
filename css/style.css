@@ -1,0 +1,10 @@
+.nav-scroll-wrapper {
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  display: none;
+}

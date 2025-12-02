@@ -11,5 +11,4 @@ $host = $_SERVER['HTTP_HOST'];
 $basePath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/';
 $htmlroot = $protocol . $host . $basePath;
 $phproot = PHPROOT;
-$test = "Testing";
 ?>

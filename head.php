@@ -4,10 +4,6 @@
     <meta name="description" content="<?php echo $meta['description']; ?>">
     <meta name="keywords" content="<?php echo $meta['keywords']; ?>">
     <meta name="author" content="<?php echo $meta['author']; ?>">
-    
-    <link rel="stylesheet" href="<?php echo $htmlroot; ?>bootstrap-5.0.2/dist/css/bootstrap.min.css">
-    <script src="<?php echo $htmlroot; ?>bootstrap-5.0.2/dist/js/bootstrap.bundle.js"></script>
-
     <?php foreach ($meta['og'] as $property => $content): ?>
         <meta property="og:<?php echo $property; ?>" content="<?php echo $content; ?>">
     <?php endforeach; ?>

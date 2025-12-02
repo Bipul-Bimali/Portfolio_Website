@@ -1,5 +1,4 @@
 <div class="container-fluid ">
-
     </div>  
     <nav style="height:fit-content" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -28,17 +27,11 @@
                             <li><a class="dropdown-item" href="#"> Application Development</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a id="projects" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./projects.php">
                             Projects
                         </a>
-                        <ul id="project_list" class="dropdown-menu">
-                            <li><Button class="dropdown-item" onmouseover="ProjectList( 'web development','projects')">Web Based Project</button></li>
-                            <li><a class="dropdown-item" onmouseover="ProjectList( 'Software development','projects')">Software Development Project</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
+                    </li>                    <li class="nav-item">
                         <a class="nav-link" target="blank" href="<?php echo $htmlroot;?>contact.php">Contact me</a>
                     </li>
                 </ul>

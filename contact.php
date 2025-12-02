@@ -11,16 +11,16 @@ include __DIR__. '/config.php';
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Bipul Bimali - Passionate Cybersecurity Enthusiast working towards making a safer digital world',
-    'keywords' => 'Bipul Bimali, Cybersecurity, Web Development, Software Developer',
+    'description' => 'Cnotact Bipul Bimali for Web Development projetcs, Cybersecurity Consultation, or software inquiries, Get a quick response here!',
+    'keywords' => 'Bipul Bimalicontact, cybresecurity consulting, web dev quote, hire developer, reach out',
     'author' => 'Bipul Bimali',
     'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
     'og' => [
-        'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
-        'description' => 'Bipul Bimali is a well-versed web and software developer with experience in network administration',
+        'title' => "Contact Bipul Bimali -Let\'s Start a Project",
+        'description' => 'Connect with Bipul Bimali directly for web Development, Cybersecurity, or collaboration opportunities',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
         'url' => 'https://bipulbimali.com.np/index.php',
-        'type' => 'Portfolio website'
+        'type' => 'website'
     ]
 ];
 
