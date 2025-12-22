@@ -25,35 +25,18 @@ $assets = [
         [
             'path' => 'bootstrap-5.3.3/dist/css/bootstrap.min.css',
             'attributes' => '' 
-        ],
-        // 2. Example: Print-only stylesheet
-        [
-            // 'path' => 'css/print-styles.css',
-            // 'attributes' => 'media="print"' 
         ]
-    ],
-    
-    // --- JavaScript Assets ---
+    ],    
     'js' => [
-        // 1. Bootstrap Bundle (Critical library)
         [
             'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
-           // 'attributes' => 'defer' // Recommended for performance
         ],
-        // 2. Custom Main Script (Your logic)
         [
             'path' => 'javascript/main.js',
-            // Example of multiple attributes: defer and a custom ID
             'attributes' => 'defer id="main-script"' 
-        ],
-        // 3. Example: External script that requires 'async'
-        [
-            // 'path' => 'https://example.com/analytics.js',
-            // 'attributes' => 'async' 
         ]
     ],
     
-    // --- Other Assets ---
     'favicon' => 'icon/icon.svg'
 ];
 ?>

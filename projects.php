@@ -55,7 +55,8 @@ $assets = [
     
     'js' => [
         [
-            'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
+            'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js',
+             'attributes' => '' 
         ],
         [
             'path' => 'javascript/main.js',
