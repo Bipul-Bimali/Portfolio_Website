@@ -5,24 +5,40 @@ include __DIR__. '/config.php';
 
 
 <?php
-// if($_SERVER['REQUEST_METHOD']=="GET"){
-//     if($_GET["Project_category"]){
-//         $project = $_GET['Project_category'];
+$content1 = "projects/default.html";
+if($_SERVER['REQUEST_METHOD']=="GET"){
+    if($_GET["id"]){
+        $project = $_GET['id'];
         
 
-//         switch ($project) {
-//             case "test": 
-//                 $content1 = "sitemap.xml";
-//                 break;
-//             default:
-//                  $content1 = "projects/default.html";
-//         }
-//     }
-// }
-// else{
-//     $content=projects/default.html
-// }
-$content1 = "projects/default.html";
+        switch ($project) {
+            case "rubber-ducky": 
+                $content1 = "projects/ducky.html";
+                break;
+            case "linux-recovery": 
+                $content1 = "projects/linux-recovery.html";
+                break;
+            case "homelab": 
+                $content1 = "projects/homelab.html";
+                break;
+            case "hestia-work": 
+                $content1 = "projects/Hestia.html";
+                break;
+            case "php-portfolio": 
+                $content1 = "projects/php-portfolio.html";
+                break;
+            case "linux-checks": 
+                $content1 = "projects/linux-checks.html";
+                break;
+            default:
+                 $content1 = "projects/default.html";
+        }
+    }
+}
+else{
+    $content1="projects/default.html";
+}
+// $content1="projects/ducky.html";
 ?>
 <?php
 $title = "Projects | Linux Administrator, DevOps & Cybersecurity";

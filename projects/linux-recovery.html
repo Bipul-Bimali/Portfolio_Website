@@ -1,0 +1,86 @@
+<div class="container my-5 px-4">
+    <header class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-accent">Linux System Recovery</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 750px;">
+            Restoring secure SSH access, repairing user permissions, and enforcing least‑privilege principles during a controlled system recovery.
+        </p>
+    </header>
+
+    <div class="row g-4">
+        <!-- OVERVIEW -->
+        <div class="col-12">
+            <div class="card bg-dark-card border-secondary h-100">
+                <div class="card-body p-4">
+                    <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">01. OVERVIEW</h2>
+                    <p class="text-muted">
+                        This project demonstrates hands‑on experience recovering a Linux system after access failure caused by broken SSH key configurations and misaligned user permissions. 
+                        The focus was on restoring secure authentication, enforcing least‑privilege access, and ensuring operational safety throughout the recovery workflow.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- METHODOLOGY -->
+        <div class="col-md-7">
+            <div class="card bg-dark-card border-secondary h-100">
+                <div class="card-body p-4">
+                    <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">02. METHODOLOGY</h2>
+
+                    <ul class="list-unstyled text-muted">
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>SSH Key Repair:</strong> Identified mismatched or corrupted key pairs, regenerated secure keys, and restored proper permissions for <code>~/.ssh</code> directories.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Access Restoration:</strong> Updated <code>authorized_keys</code>, validated <code>sshd_config</code>, and tested authentication using non‑privileged accounts.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>User & Permission Fixes:</strong> Audited user groups, corrected ownership issues, and enforced least‑privilege access across system directories.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Operational Safety:</strong> Performed recovery through TTY/local console, backed up configs before modification, and validated system integrity post‑recovery.
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECH STACK -->
+        <div class="col-md-5">
+            <div class="card bg-dark-card border-secondary h-100">
+                <div class="card-body p-4">
+                    <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">TECH STACK</h2>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-secondary">Linux (Ubuntu/Debian)</span>
+                        <span class="badge bg-secondary">SSH / OpenSSH</span>
+                        <span class="badge bg-secondary">Systemd</span>
+                        <span class="badge bg-secondary">File Permissions</span>
+                        <span class="badge bg-secondary">ACLs</span>
+                        <span class="badge bg-secondary">Sudoers</span>
+                        <span class="badge bg-secondary">journalctl</span>
+                        <span class="badge bg-secondary">auth.log</span>
+                        <span class="badge bg-secondary">TTY Recovery</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER QUOTE -->
+    <div class="mt-5 p-4 text-center rounded shadow-sm border border-info" 
+         style="background: rgba(56, 189, 248, 0.05);">
+        <p class="fst-italic mb-0 text-white">
+            "Recovery isn’t luck — it’s understanding how a system fails and bringing it back safely."
+        </p>
+    </div>
+</div>

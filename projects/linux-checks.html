@@ -1,0 +1,95 @@
+<div class="container my-5 px-4">
+    <header class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-accent">Linux System Health Checks</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 750px;">
+            Experience with system administration and performance monitoring, analyzing resource utilization (CPU/RAM), and ensuring system integrity in a Linux environment.
+        </p>
+    </header>
+
+    <div class="row g-4">
+
+        <!-- OVERVIEW -->
+        <div class="col-12">
+            <div class="card bg-dark-card border-secondary h-100">
+                <div class="card-body p-4">
+                    <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">01. OVERVIEW</h2>
+                    <p class="text-muted">
+                        This project demonstrates hands-on experience performing Linux system health checks across multiple distributions. 
+                        The focus was on analyzing system performance, monitoring resource utilization, validating service uptime, and ensuring 
+                        overall system integrity. These checks simulate real-world troubleshooting and operational maintenance tasks performed 
+                        by system administrators in production environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- METHODOLOGY -->
+        <div class="col-md-7">
+            <div class="card bg-dark-card border-secondary h-100">
+                <div class="card-body p-4">
+                    <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">02. METHODOLOGY</h2>
+
+                    <ul class="list-unstyled text-muted">
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Resource Monitoring:</strong> Used tools like <code>top</code>, <code>htop</code>, <code>free -h</code>, and <code>vmstat</code> to analyze CPU load, memory usage, and process behavior.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Disk & Filesystem Checks:</strong> Validated disk health using <code>df -h</code>, <code>du -sh</code>, <code>lsblk</code>, and <code>smartctl</code> for drive diagnostics.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Service & Daemon Validation:</strong> Ensured critical services were running using <code>systemctl</code>, <code>journalctl</code>, and log analysis under <code>/var/log</code>.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Network Health:</strong> Checked connectivity, latency, and routing using <code>ping</code>, <code>ss</code>, <code>netstat</code>, <code>traceroute</code>, and <code>ip a</code>.
+                        </li>
+
+                        <li class="mb-3">
+                            <i class="bi bi-chevron-right text-info"></i>
+                            <strong>Security & Integrity:</strong> Verified permissions, user accounts, running processes, and system updates using <code>ps aux</code>, <code>sudoers</code>, and package managers.
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TECH STACK -->
+        <div class="col-md-5">
+            <div class="card bg-dark-card border-secondary h-100">
+                <div class="card-body p-4">
+                    <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">TECH STACK</h2>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-secondary">Linux</span>
+                        <span class="badge bg-secondary">Systemd</span>
+                        <span class="badge bg-secondary">Bash</span>
+                        <span class="badge bg-secondary">top / htop</span>
+                        <span class="badge bg-secondary">vmstat</span>
+                        <span class="badge bg-secondary">journalctl</span>
+                        <span class="badge bg-secondary">smartctl</span>
+                        <span class="badge bg-secondary">Networking Tools</span>
+                        <span class="badge bg-secondary">Filesystem Tools</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER QUOTE -->
+    <div class="mt-5 p-4 text-center rounded shadow-sm border border-info"
+         style="background: rgba(56, 189, 248, 0.05);">
+        <p class="fst-italic mb-0 text-white">
+            "A healthy system isn’t luck — it’s the result of consistent checks and disciplined administration."
+        </p>
+    </div>
+</div>

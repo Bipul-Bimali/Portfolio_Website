@@ -12,3 +12,4 @@ $basePath = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/') . '/';
 $htmlroot = $protocol . $host . $basePath;
 $phproot = PHPROOT;
 ?>
+
