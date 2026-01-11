@@ -1,106 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
- xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
- http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator https://sitemap-generator.org/ -->
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-  <loc>http://bipulbimali.com.np/./</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://bipulbimali.com.np/contact.php?service=web development</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://bipulbimali.com.np/contact.php?service=Server Administration</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/./projects.php</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://bipulbimali.com.np/contact.php</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=rubber-ducky</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=network-lab</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=linux-recovery</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=azure-deploy</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=homelab</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=linux-checks</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=hestia-work</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=aws-trouble</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=php-portfolio</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=wp-setup</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=mail-service</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=calculator-logic</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=net-troubleshoot</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://bipulbimali.com.np/case_study.php?id=ucp-launch</loc>
-  <priority>1.0</priority>
-  <changefreq>monthly</changefreq>
-</url>
-  
-  
-  </urlset>
+    <loc>https://bipulbimali.com.np/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/index.php</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/contact.php</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/contact.php?service=web%20development</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/contact.php?service=Server%20Administration</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=rubber-ducky</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=azure-deploy</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/project/Calculator/calculator.php</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=linux-checks</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=homelab</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=network-lab</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=net-troubleshoot</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=mail-service</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=wp-setup</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/case_study.php?id=ucp-launch</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=php-portfolio</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=hestia-work</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=linux-recovery</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://bipulbimali.com.np/projects.php?id=aws-trouble</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
