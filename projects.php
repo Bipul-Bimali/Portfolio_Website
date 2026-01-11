@@ -14,24 +14,137 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
         switch ($project) {
             case "rubber-ducky": 
                 $content1 = "projects/ducky.html";
+                $title = "USB Rubber Ducky + Raspberry Pi 4 Runner | Pentesting & IoT Security";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'A hands-on cybersecurity project by Bipul Bimali demonstrating physical access exploitation using a USB Rubber Ducky and Raspberry Pi 4. Includes reverse shell execution, encrypted tunnels, IoT-based C2, PowerShell obfuscation, and Linux hardening techniques.',
+                    'keywords' => 'USB Rubber Ducky, Raspberry Pi 4, Pentesting, IoT Security, Physical Access Exploitation, Reverse Shell, PowerShell Obfuscation, SSH Tunneling, Linux Security, Cybersecurity Projects, Red Team Tools',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'A practical pentesting and IoT security project combining USB Rubber Ducky payload execution with a Raspberry Pi 4 acting as a covert drop-box for persistent remote access.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
+
                 break;
             case "linux-recovery": 
                 $content1 = "projects/linux-recovery.html";
+                $title = "Linux System Recovery | Secure SSH Restoration & Permission Repair";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'A practical Linux recovery project by Bipul Bimali focusing on restoring secure SSH access, repairing broken key configurations, fixing user permissions, and enforcing least‑privilege principles using TTY-based recovery and system integrity validation.',
+                    'keywords' => 'Linux System Recovery, SSH Repair, Linux Permissions, Least Privilege, OpenSSH, TTY Recovery, Ubuntu, Debian, Systemd, ACLs, Sudoers, auth.log, journalctl, Linux Security, Sysadmin Projects',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'Hands-on Linux system recovery project restoring SSH access, repairing permissions, and enforcing least‑privilege access through secure, controlled recovery workflows.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
                 break;
             case "homelab": 
                 $content1 = "projects/homelab.html";
+                $title = "Home Lab Automation | Zabbix, SNMP, OpenVPN & Proxmox Virtualization";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'A production-style home lab automation project by Bipul Bimali featuring Zabbix monitoring, SNMP telemetry, OpenVPN secure remote access, and Proxmox virtualization. Designed for scalable, secure, and reliable continuous learning and infrastructure testing.',
+                    'keywords' => 'Home Lab Automation, Zabbix Monitoring, SNMPv2, SNMPv3, OpenVPN, Proxmox VE, Virtualization, KVM, LXC, VLANs, Linux Lab, Network Monitoring, TLS Certificates, Automation Scripts, Sysadmin Projects',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'A comprehensive home lab automation project integrating Zabbix, SNMP, OpenVPN, and Proxmox VE to build a secure, scalable, and production-style learning environment.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
                 break;
-            case "hestia-work": 
-                $content1 = "projects/Hestia.html";
+            case "hestia-work":
+                $title = "Hestia Control Panel Work | Web Hosting, SSL, DNS & Server Troubleshooting";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'Hands-on web hosting infrastructure work by Bipul Bimali using the Hestia Control Panel. Includes domain and DNS configuration, SSL deployment, file permission management, and server-side troubleshooting across Nginx/Apache and PHP-FPM in a production-style environment',
+                    'keywords' => 'Hestia Control Panel, Web Hosting, DNS Configuration, SSL Certificates, Let’s Encrypt, Nginx, Apache, PHP-FPM, Linux Administration, Server Troubleshooting, File Permissions, Web Server Configuration, Hosting Infrastructure, Sysadmin Projects',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'Practical hosting environment management using Hestia CP, covering DNS, SSL, permissions, and server-side troubleshooting for secure and reliable web deployments.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ]; 
+                $content1 = "projects/hestia.html";
                 break;
-            case "php-portfolio": 
+            case "php-portfolio":
+                $title = "Modular PHP Portfolio | Scalable Architecture, Config Separation & Reusable Components";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'A modular PHP portfolio project by Bipul Bimali showcasing scalable architecture, config separation, reusable components, and clean code structure. Built for extensibility, maintainability, and future expansion with dynamic routing and structured UI blocks.',
+                    'keywords' => 'Modular PHP Portfolio, PHP Architecture, Config Separation, Reusable Components, Scalable PHP Design, Backend Development, PHP Refactoring, Clean Code, Bootstrap UI, Version Control, Dynamic Routing, Web Development Projects',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'A fully modular PHP portfolio system featuring reusable components, config separation, scalable architecture, and clean backend design for easy expansion and maintainability.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ]; 
                 $content1 = "projects/php-portfolio.html";
                 break;
             case "linux-checks": 
                 $content1 = "projects/linux-checks.html";
+                $title = "Linux System Health Checks | Performance Monitoring & System Integrity";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'Linux system health check project by Bipul Bimali focusing on CPU/RAM monitoring, disk diagnostics, service validation, network health checks, and system integrity verification across multiple Linux distributions.',
+                    'keywords' => 'Linux Health Checks, System Monitoring, CPU Usage, RAM Utilization, Disk Diagnostics, smartctl, systemctl, journalctl, Network Tools, Linux Administration, Performance Monitoring, Sysadmin Projects, Troubleshooting',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'Hands-on Linux system health check project analyzing performance, resource usage, disk health, service uptime, and system integrity using real-world sysadmin tools.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
                 break;
             default:
-                 $content1 = "projects/default.html";
+                $content1 = "projects/default.html";
+                $title = "Projects | Linux Administrator, DevOps & Cybersecurity";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'Explore Bipul Bimali’s projects in Linux Administration, DevOps, Cloud (AWS/Azure), Cybersecurity, and Full-Stack Development. Case studies on penetration testing, system recovery, cloud deployment, and secure web hosting.',
+                    'keywords' => 'Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'Hands-on projects: penetration testing, cloud deployment, network monitoring, PHP portfolio, and secure system recovery.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
         }
     }
 }
@@ -41,22 +154,7 @@ else{
 // $content1="projects/ducky.html";
 ?>
 <?php
-$title = "Projects | Linux Administrator, DevOps & Cybersecurity";
-$meta = [
-    'charset' => 'UTF-8',
-    'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Explore Bipul Bimali’s projects in Linux Administration, DevOps, Cloud (AWS/Azure), Cybersecurity, and Full-Stack Development. Case studies on penetration testing, system recovery, cloud deployment, and secure web hosting.',
-    'keywords' => 'Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
-    'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
-    'og' => [
-        'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
-        'description' => 'Hands-on projects: penetration testing, cloud deployment, network monitoring, PHP portfolio, and secure system recovery.',
-        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
-        'url' => 'https://bipulbimali.com.np/index.php',
-        'type' => 'website'
-    ]
-];
+
 $assets = [
     'css' => [
         [
