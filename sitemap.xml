@@ -1,103 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://bipulbimali.com.np/</loc>
-    <changefreq>monthly</changefreq>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <url>
-    <loc>https://bipulbimali.com.np/index.php</loc>
-    <changefreq>monthly</changefreq>
-  </url>
 
-  <url>
-    <loc>https://bipulbimali.com.np/contact.php</loc>
-    <changefreq>monthly</changefreq>
-  </url>
+<url>
+  <loc>https://bipulbimali.com.np/</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/contact.php?service=web%20development</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/contact.php?service=Server%20Administration</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/contact.php</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=rubber-ducky</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=network-lab</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=linux-recovery</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=azure-deploy</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=homelab</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=linux-checks</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=hestia-work</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=aws-trouble</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=php-portfolio</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=wp-setup</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=mail-service</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/project/Calculator/calculator.php</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/projects.php?id=net-troubleshoot</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bipulbimali.com.np/index.php</loc>
+  <lastmod>2026-01-10T20:21:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 
-  <url>
-    <loc>https://bipulbimali.com.np/contact.php?service=web%20development</loc>
-    <changefreq>monthly</changefreq>
-  </url>
 
-  <url>
-    <loc>https://bipulbimali.com.np/contact.php?service=Server%20Administration</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=rubber-ducky</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=azure-deploy</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/project/Calculator/calculator.php</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=linux-checks</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=homelab</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=network-lab</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=net-troubleshoot</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=mail-service</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=wp-setup</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/case_study.php?id=ucp-launch</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=php-portfolio</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=hestia-work</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=linux-recovery</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://bipulbimali.com.np/projects.php?id=aws-trouble</loc>
-    <changefreq>monthly</changefreq>
-  </url>
 </urlset>
