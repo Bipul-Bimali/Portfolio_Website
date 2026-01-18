@@ -4,17 +4,17 @@ include __DIR__ .'/../../config.php';
 
 <!--=======================META DATA======================-->
 <?php
-$title = " | Calculator";
+$title = " Calculator | Bipul Bimali (AirCorp)";
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Use Bipul Bimali`s online calculator for quick  and easy arithmetic  and advanced math functions. Built for speed, clarity and simplicity.',
-    'keywords' => 'Calculator, online calculator, math , arithmetic, math tool web calculator  Bipul Bimali, Web calculator',
+    'description' => 'Use Bipul Bimali (AirCorp)`s online calculator for quick  and easy arithmetic  and advanced math functions. Built for speed, clarity and simplicity.',
+    'keywords' => 'Calculator, online calculator, math , arithmetic, math tool web calculator  Bipul Bimali (AirCorp), Web calculator',
     'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
+    'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali',
     'og' => [
-        'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
-        'description' => 'A sleek web-based calculator designed by Bipul Bimali. Build with HTML, CSS and JavaScript for fast math on the fly',
+        'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali',
+        'description' => 'A sleek web-based calculator designed by Bipul Bimali (AirCorp) . Build with HTML, CSS and JavaScript for fast math on the fly',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
         'url' => 'https://bipulbimali.com.np/projects/web/Calculator/calculator.php',
         'type' => 'website'

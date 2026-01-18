@@ -6,12 +6,12 @@ include __DIR__. '/config.php';
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Bipul Bimali: Linux Administrator & Cloud Infrastructure Specialist. Building, Securing, and Optimizing enterprise-level systems.',
-    'keywords' => 'Bipul Bimali, Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
+    'description' => 'Bipul Bimali (AirCorp): Linux Administrator & Cloud Infrastructure Specialist. Building, Securing, and Optimizing enterprise-level systems.',
+    'keywords' => 'Bipul Bimali (AirCorp), Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
     'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
+    'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali',
     'og' => [
-        'title' => isset($title) ? "Bipul Bimali $title" : 'Bipul Bimali',
+        'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali',
         'description' => 'Hands-on expert in Linux/Unix, enterprise networking and cloud platforms like AWS/Azure, focused on secure and scalable IT solutions.',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
         'url' => 'https://bipulbimali.com.np/index.php',
