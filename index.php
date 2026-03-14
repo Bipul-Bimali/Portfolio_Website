@@ -55,19 +55,24 @@ include $phproot."header.php";
             <div class="col-12 col-sm-7 col-md-8 justify-content-around">
                 <p class="lead fw-bold">Hi, this is </p>
                 <h1 class="px-3 text-primary  fw-bold display-4">Bipul Bimali</h1>
-                <h2 class=" px-5 text-info">Linux Adminsistrator & Cloud Infrastructure Specialist.</h2>
-                <p class="klead mt-4"><strong> Bipul Bimali </strong> is a hands-on Linux Administrator and Systems Analyst specializing in the building, security, and optimization of enterprise infrastructure.</p>
-                <p>With proven expertise across Linux/Unix environments, AWS/Azure cloud platforms and advanced network monitoring, he focuses on solving real-world operationsl challenges-fron designing secure VLANs
-                    to advanced troubleshooting and recovering critical services. Bipul is defined by a security-first mindset
-                    and a persistent, "learn by doing" approach, translating technical rogor into reloable and strategic results.</p>
+                <h2 class=" px-5 text-info">IT Infrastructure & Security Consultant for Small Businesses</h2>
+                <p class="klead mt-4"><strong>Bipul Bimali</strong> helps small and growing businesses keep their technology secure, reliable, and running without interruption.</p>
+
+<p>
+Many small businesses rely on technology but lack dedicated infrastructure expertise. Bipul focuses on identifying weaknesses, improving reliability, and protecting critical systems before problems become costly failures.
+</p>
+
+<p>
+With hands-on experience across Linux servers, cloud infrastructure, system monitoring, and network operations, he works directly with real systems — building, breaking, and fixing them to ensure they remain secure and dependable in real-world environments.
+</p>
             </div>
             <div class="col-12 mt-4 col-sm-5 col-md-4">
                 <div class="card" style="min-width: 18rem;">
                     <img src="images/web_developer.jpg" class="card-img-top" alt="I am a Web developer">
                     <div class="card-body">
-                        <h5 class="card-title">View  My work in Action </h5>
-                        <p class="card-text">Explore technical projects, home lab configurations, and practical solutions across Linux, Networking, and Cloud.</p>
-                        <a href="https://kenzie.snhu.edu/blog/everything-you-need-to-know-about-a-career-in-web-development/" class="btn btn-primary">Browse Technical Projects</a>
+                        <h5 class="card-title">View Real Infrastructure Projects</h5>
+                        <p class="card-text">Explore real-world infrastructure builds, system monitoring setups, cloud deployments, and practical troubleshooting work from hands-on environments and home lab testing.</p>
+                        <a href="https://kenzie.snhu.edu/blog/everything-you-need-to-know-about-a-career-in-web-development/" class="btn btn-primary">Browse Infrastructure Projects</a>
                     </div>
                 </div>
             </div>
@@ -77,19 +82,23 @@ include $phproot."header.php";
         <div class="row justify-content-around">
             <div class="col-12 col-sm-10 col-md-6">
                 <h3 class="h1 py-3 my-3 text-light text-center">Why Me ??</h3>
-                <p class="text-white text-center ">I don't just learn theory, I build, break and fix,
-                    My experience is defined y practical application and
-                    a security-first mindset.</p>
+                <p class="text-white text-center ">
+I focus on practical infrastructure reliability. Systems are built, tested under failure conditions, and hardened against real-world risks.
+</p>
+
+<p class="text-white text-center">
+My approach is simple: identify weaknesses early, solve them properly, and ensure systems remain stable, secure, and observable.
+</p>
             </div>
             <div class="col-12  my-3 py-4">
                 <div class="container-fluid">
                     <div class="row justify-content-around ">
-                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center m-2 b-2"><h2>Advanced System Troubleshooting</h2></div>
-                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center m-2 b-2"><h2>Enterprise-level Networking (VLAN/ACL)</h2></div>
-                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Linux / Cloud (AWS / Azure)</h2></div>
-                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Security-First Operations & Principles</h2></div>
-                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>System Monitoring & Atutomation</h2></div>
-                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Real-World Problem Solving</h2></div>
+                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center m-2 b-2"><h2>Infrastructure Troubleshooting</h2></div>
+                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center m-2 b-2"><h2>Network Design & Segmentation</h2></div>
+                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Server & Cloud Infrastructure</h2></div>
+                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Security Hardening</h2></div>
+                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Monitoring & System Visibility</h2></div>
+                        <div class="col-12 col-sm-5 col-md-5 col-xl-3 title text-center  m-2 b-2"><h2>Operational Problem Solving</h2></div>
                     </div>
                 </div>
             </div>
@@ -103,17 +112,22 @@ include $phproot."header.php";
             </div>
             <div class="col-11 text-center col-sm-8 col-md-9">
                 <h3 class=" h1  my-4  text-center text-light">My Vision</h3>
-                <p class="text-light" >My vision is to be one of the top lead in cybersecurity</p><!--
+                <p class="text-light" >
+                    My long-term goal is to become a leading expert in infrastructure security and cybersecurity engineering.
+                </p><!--
                 <p class="text-light">I am starting  my journey with a firm grasp on programming and web development </p> -->
-                <p class="text-light">
-                My ultimate vision is to be a leading expert in <strong>Cubersecurity Engineering </strong> and <Strong>Infrastructure Security </Strong> 
-                </p>
-                <p class="text-light">
-                    I am building towards  this goal by  leveraging my strong foundation in <strong> Linux System Administration </strong>  and
-                    <strong> Operations</strong>.
-                    I am to master defensive  and ofensive techniques required to protect  and secure comples digital landscapes, transitioning
-                    from strategic cybersecurity  leadership.
-                </p>
+                
+<p class="text-light">
+This journey begins with mastering the systems that modern businesses depend on every day — servers, networks, monitoring systems, and cloud infrastructure.
+</p>
+
+<p class="text-light">
+By understanding how systems are built, operated, and sometimes fail, I continue developing the skills required to identify weaknesses and secure complex digital environments.
+</p>
+
+<p class="text-light">
+The ultimate objective is clear: design, defend, and strengthen infrastructure against real-world threats.
+</p>
             </div>
         </div>
     </section>
