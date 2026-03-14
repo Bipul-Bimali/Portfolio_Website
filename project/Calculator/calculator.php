@@ -27,7 +27,7 @@ $assets = [
     ],
      'js' => [
         [
-            'path' => 'Calculator.js',
+            'path' => 'calculator.js',
             'attributes' => 'defer' 
         ]
     ],
