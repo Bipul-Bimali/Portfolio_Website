@@ -6,16 +6,16 @@ include __DIR__. '/config.php';
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Bipul Bimali (AirCorp): Linux Administrator & Cloud Infrastructure Specialist. Building, Securing, and Optimizing enterprise-level systems.',
-    'keywords' => 'Bipul Bimali (AirCorp), Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
+    'description' => 'Bipul Bimali (AirCorp) provides IT consulting for small businesses: secure, reliable, and optimized infrastructure, email protection, cloud services, and system monitoring.',
+    'keywords' => 'IT consultant, small business IT, infrastructure security, system monitoring, cloud consulting, email security, server management, reliable IT systems, business technology solutions',
     'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
+    'title' => isset($title) ? "Bipul Bimali | AirCorp IT Consultant for Small Businesses $title" : 'Bipul Bimali | AirCorp IT Consultant for Small Businesses',
     'og' => [
-        'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
-        'description' => 'Hands-on expert in Linux/Unix, enterprise networking and cloud platforms like AWS/Azure, focused on secure and scalable IT solutions.',
+        'title' => isset($title) ? "Bipul Bimali | AirCorp IT Consultant for Small Businesses $title" : 'Bipul Bimali | AirCorp IT Consultant for Small Businesses',
+        'description' => 'Bipul Bimali (AirCorp) helps small businesses protect, optimize, and monitor their IT infrastructure. Expertise in secure servers, cloud platforms, email protection, and system reliability.',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
         'url' => 'https://bipulbimali.com.np/index.php',
-        'type' => 'Portfolio website'
+        'type' => 'website'
     ]
 ];
 $assets = [
