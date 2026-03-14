@@ -21,9 +21,9 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                     'description' => 'A hands-on cybersecurity project by Bipul Bimali demonstrating physical access exploitation using a USB Rubber Ducky and Raspberry Pi 4. Includes reverse shell execution, encrypted tunnels, IoT-based C2, PowerShell obfuscation, and Linux hardening techniques.',
                     'keywords' => 'USB Rubber Ducky, Raspberry Pi 4, Pentesting, IoT Security, Physical Access Exploitation, Reverse Shell, PowerShell Obfuscation, SSH Tunneling, Linux Security, Cybersecurity Projects, Red Team Tools',
                     'author' => 'Bipul Bimali',
-                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali | AirCorp" : 'Bipul Bimali | AirCorp',
                     'og' => [
-                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali | AirCorp',
                         'description' => 'A practical pentesting and IoT security project combining USB Rubber Ducky payload execution with a Raspberry Pi 4 acting as a covert drop-box for persistent remote access.',
                         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
                         'url' => 'https://bipulbimali.com.np/index.php',
@@ -110,6 +110,25 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                 break;
             case "linux-checks": 
                 $content1 = "projects/linux-checks.html";
+                $title = "Linux System Health Checks | Performance Monitoring & System Integrity";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'Linux system health check project by Bipul Bimali focusing on CPU/RAM monitoring, disk diagnostics, service validation, network health checks, and system integrity verification across multiple Linux distributions.',
+                    'keywords' => 'Linux Health Checks, System Monitoring, CPU Usage, RAM Utilization, Disk Diagnostics, smartctl, systemctl, journalctl, Network Tools, Linux Administration, Performance Monitoring, Sysadmin Projects, Troubleshooting',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'Hands-on Linux system health check project analyzing performance, resource usage, disk health, service uptime, and system integrity using real-world sysadmin tools.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
+                break;
+            case "network-lab": 
+                $content1 = "projects/network-lab.html";
                 $title = "Linux System Health Checks | Performance Monitoring & System Integrity";
                 $meta = [
                     'charset' => 'UTF-8',
