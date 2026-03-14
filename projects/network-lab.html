@@ -1,10 +1,10 @@
 
 <div class="container my-5 px-4">
     <header class="text-center mb-5">
-        <h1 class="display-4 fw-bold text-accent">Network Security Lab</h1>
+        <h1 class="display-4 fw-bold text-accent">Network Security Implementation</h1>
         <p class="lead text-muted mx-auto" style="max-width: 750px;">
-            Designed and stress-tested VLAN, ACL, and port security scenarios, 
-            exploring edge cases in segmentation and access control in a controlled lab environment.
+            Designed and deployed VLANs, ACLs, and port security measures to protect critical business networks, ensuring segmentation, controlled access, and secure operations for enterprise environments.
+
         </p>
     </header>
 
@@ -16,10 +16,8 @@
                 <div class="card-body p-4">
                     <h2 class="h4 text-accent border-start border-4 border-info ps-3 mb-4">01. OVERVIEW</h2>
                     <p class="text-muted">
-                        In a modern enterprise, a "flat" network is a playground for lateral movement.
-            This lab focuses on <strong>Micro-segmentation</strong> and <strong>Access Control 
-                Lists (ACLs)</strong> to ensure that even if one segment is compromised (like a 
-                Guest Wi-Fi or IoT device), the core production data remains isolated and secure.  
+                        Modern business networks require proper segmentation to reduce risk and prevent lateral movement. 
+                        This project implements <strong>micro-segmentation</strong> and <strong>Access Control Lists (ACLs)</strong> to isolate critical systems from less secure segments such as Guest Wi-Fi or IoT devices, maintaining confidentiality and operational stability.
                     </p>
                 </div>
             </div>
@@ -35,17 +33,17 @@
 
                         <li class="mb-3">
                             <i class="bi bi-chevron-right text-info"></i>
-                             <strong>VLAN Segmentation:</strong>Established logically isolated networks (Management, Production, IoT, and DMZ) to reduce the broadcast domain and attack surface.
+                             <strong>VLAN Segmentation:</strong> Implemented logically isolated networks (Management, Production, IoT, DMZ) to reduce attack surfaces and improve traffic control.
                         </li>
 
                         <li class="mb-3">
                             <i class="bi bi-chevron-right text-info"></i>
-                            <strong>Switch-Port Security:</strong> Configured MAC-address limiting and "Sticky" MACs to prevent rogue device injection and CAM table overflow attacks.
+                            <strong>Switch-Port Security:</strong> Applied MAC-address limiting and "Sticky" MACs to prevent unauthorized devices and network table overflow.
                         </li>
 
                         <li class="mb-3">
                             <i class="bi bi-chevron-right text-info"></i>
-                             <strong>DHCP Snooping & Dynamic ARP Inspection (DAI):</strong> Mitigated Man-in-the-Middle (MitM) attacks by ensuring only authorized DHCP servers can assign IPs and validating ARP packets.
+                             <strong>DHCP Snooping & Dynamic ARP Inspection (DAI):</strong> Ensured only authorized servers assign IP addresses and validated ARP packets to prevent MitM attacks.
                         </li>
                     </ul>
                 </div>
