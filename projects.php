@@ -8,8 +8,7 @@ include __DIR__. '/config.php';
 $content1 = "projects/default.html";
 if($_SERVER['REQUEST_METHOD']=="GET"){
     if($_GET["id"]){
-        $project = $_GET['id'];
-        
+        $project = preg_replace('/[^a-zA-Z0-9\-]/', '', $_GET['id']);
 
         switch ($project) {
             case "rubber-ducky": 
@@ -146,6 +145,8 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                     ]
                 ];
                 break;
+                case "Fuck_ed":
+                    echo "You are Fuckeed Bithch";
             default:
                 $content1 = "projects/default.html";
                 $title = "Projects | Linux Administrator, DevOps & Cybersecurity";
@@ -170,7 +171,6 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
 else{
     $content1="projects/default.html";
 }
-// $content1="projects/ducky.html";
 ?>
 <?php
 

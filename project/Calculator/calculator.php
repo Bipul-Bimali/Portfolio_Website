@@ -81,5 +81,5 @@ include $phproot.'/head.php';
                 </div>
         </div>
     </body>
-	<!-- <script src="https://bipulbimali.com.np/projects/web/Calculator/calculator.js"></script> -->
+
 </html>
