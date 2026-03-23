@@ -52,17 +52,17 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                 break;
             case "homelab": 
                 $content1 = "projects/homelab.html";
-                $title = "Home Lab Automation | Zabbix, SNMP, OpenVPN & Proxmox Virtualization";
+                $title = "Automated Monitoring & Secure Remote Access | Infrastructure Project";
                 $meta = [
                     'charset' => 'UTF-8',
                     'viewport' => 'width=device-width, initial-scale=1.0',
-                    'description' => 'A production-style home lab automation project by Bipul Bimali featuring Zabbix monitoring, SNMP telemetry, OpenVPN secure remote access, and Proxmox virtualization. Designed for scalable, secure, and reliable continuous learning and infrastructure testing.',
-                    'keywords' => 'Home Lab Automation, Zabbix Monitoring, SNMPv2, SNMPv3, OpenVPN, Proxmox VE, Virtualization, KVM, LXC, VLANs, Linux Lab, Network Monitoring, TLS Certificates, Automation Scripts, Sysadmin Projects',
+                    'description' => 'IT consulting project by Bipul Bimali focused on building reliable system monitoring, secure remote access, and scalable environments. Demonstrates real-world problem solving, system stability, and proactive infrastructure management for business needs.',
+                    'keywords' => 'IT Consultant, System Monitoring, Remote Access, Infrastructure Setup, Zabbix, VPN, Proxmox, Linux Servers, Network Monitoring, Business IT Solutions, Infrastructure Management, IT Support Solutions',
                     'author' => 'Bipul Bimali',
                     'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
                     'og' => [
                         'title' => isset($title) ? "$title" : 'Bipul Bimali',
-                        'description' => 'A comprehensive home lab automation project integrating Zabbix, SNMP, OpenVPN, and Proxmox VE to build a secure, scalable, and production-style learning environment.',
+                        'description' => 'A real-world IT consulting project showing how businesses can monitor systems, access them securely, and maintain reliable infrastructure with proactive management.',
                         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
                         'url' => 'https://bipulbimali.com.np/index.php',
                         'type' => 'website'
