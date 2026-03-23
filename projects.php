@@ -107,6 +107,29 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                 ]; 
                 $content1 = "projects/php-portfolio.html";
                 break;
+
+
+
+                case "synchronousemail":
+                $content1 = "projects\synchronousemail.html";
+                $title = "Reliable Email Delivery System | Self-Hosted Mail & SMTP Setup";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'Built a self-hosted email system to ensure reliable message delivery, reduce spam issues, and maintain control over email infrastructure using SMTP and domain configuration.',
+                    'keywords' => 'email server setup, SMTP configuration, self hosted email, email delivery, spam prevention, IT infrastructure, system reliability',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'Built a self-hosted email system to ensure reliable message delivery, reduce spam issues, and maintain control over email infrastructure using SMTP and domain configuration.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ]; 
+
+                break;
             case "linux-checks": 
                 $content1 = "projects/linux-checks.html";
                 $title = "Linux System Health Checks | Performance Monitoring & System Integrity";
