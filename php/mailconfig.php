@@ -14,7 +14,7 @@ $mailConfig = [
 function sendContactMail($name, $email, $message, $mailConfig) {
     // Build subject
     $subject = $mailConfig['subject_prefix'] . " New message from " . $name;
-
+    $mailConfig['to_email'] = $email;
     // Build body
     $body = "You have received a new message from your portfolio contact form:\n\n";
     $body .= "Name: " . htmlspecialchars($name) . "\n";
@@ -26,7 +26,7 @@ function sendContactMail($name, $email, $message, $mailConfig) {
 
     // Headers
     $headers = "From: " . $mailConfig['from_name'] . " <" . $mailConfig['from_email'] . ">\r\n";
-    $headers .= "Reply-To: " . $email . "\r\n";
+    // $headers .= "Reply-To: " . 'bipulbimali@gmail.com' . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
     // Send mail

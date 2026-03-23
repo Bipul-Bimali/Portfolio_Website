@@ -121,7 +121,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $statement = "INSERT INTO Messages (`Full Name`, `Email`, `Message`, `Category`) Values ('$name','$email','$Message',NULL)";
                // echo $statement;
         if($conn->query($statement)){
-            require_once $phproot."php/mailconfigv1.php";
+            require_once $phproot."php/mailconfig.php";
           if (sendContactMail($name, $email, $Message, $mailConfig)) {
               echo "Message has been submitted and email sent.";
           }
