@@ -31,16 +31,22 @@
                         <a class="nav-link" aria-current="page" href="./projects.php">
                             Projects
                         </a>
-                    </li>                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" target="blank" href="<?php echo $htmlroot;?>contact.php">Contact me</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">
                         Search
                     </button>
-                </form>
+                </form> -->
+                <div class="form-check form-switch ms-3 d-flex align-items-center">
+    <input class="form-check-input" type="checkbox" id="themeToggle">
+    <label class="form-check-label ms-2" for="themeToggle" id="themeIcon">🌙</label>
+</div>
+
             </div>
         </div>
     </nav>

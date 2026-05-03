@@ -8,3 +8,43 @@
   width: 1px;
   display: none;
 }
+
+
+
+
+
+.neon-fade {
+    position: relative;
+    /* padding: 20px 20px 20px 20px; */
+    /* border-radius: 10px ; */
+}
+
+
+
+.glow-left,
+.glow-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 10;
+}
+
+/* Left glow */
+.glow-left {
+    left: 0;
+    background: radial-gradient(circle at left center,
+        color-mix(in srgb, var(--bs-primary) 60%, transparent),
+        transparent 70%);
+}
+
+/* Right glow */
+.glow-right {
+    right: 0;
+    background: radial-gradient(circle at right center,
+        color-mix(in srgb, var(--bs-primary) 60%, transparent),
+        transparent 70%);
+}

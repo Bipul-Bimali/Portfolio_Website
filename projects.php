@@ -146,17 +146,17 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                 break;
             case "network-lab": 
                 $content1 = "projects/network-lab.html";
-                $title = "Linux System Health Checks | Performance Monitoring & System Integrity";
+                $title = "Enterprise Network Security | VLAN Segmentation, ACLs & Port Security";
                 $meta = [
                     'charset' => 'UTF-8',
                     'viewport' => 'width=device-width, initial-scale=1.0',
-                    'description' => 'Linux system health check project by Bipul Bimali focusing on CPU/RAM monitoring, disk diagnostics, service validation, network health checks, and system integrity verification across multiple Linux distributions.',
-                    'keywords' => 'Linux Health Checks, System Monitoring, CPU Usage, RAM Utilization, Disk Diagnostics, smartctl, systemctl, journalctl, Network Tools, Linux Administration, Performance Monitoring, Sysadmin Projects, Troubleshooting',
+                    'description' => 'Network security implementation for AirCorp by Bipul Bimali, focusing on VLAN segmentation, micro-segmentation, ACLs, DHCP snooping, and port security measures within Cisco enterprise environments.',
+                    'keywords' => 'Network Security, VLAN Segmentation, Access Control Lists, ACLs, Port Security, Cisco IOS, 802.1Q Trunking, DHCP Snooping, Dynamic ARP Inspection, DAI, STP Hardening, Network Hardening, Enterprise Security, Bipul Bimali',
                     'author' => 'Bipul Bimali',
                     'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
                     'og' => [
                         'title' => isset($title) ? "$title" : 'Bipul Bimali',
-                        'description' => 'Hands-on Linux system health check project analyzing performance, resource usage, disk health, service uptime, and system integrity using real-world sysadmin tools.',
+                        'description' => 'A technical overview of securing modern business networks through logical isolation, switch-port security, and traffic control to prevent lateral movement.',
                         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
                         'url' => 'https://bipulbimali.com.np/index.php',
                         'type' => 'website'

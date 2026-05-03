@@ -5,12 +5,14 @@
                 <h1 class="px-3 text-primary  fw-bold display-4">AirCorp Consulting Projects</h1>
                 <h2 class=" px-5 text-info">Real-World IT Solutions for Small Businesses</h2>
                <div class="container-fluid neon-fade ">
-                    <div class="d-flex overflow-auto nav-scroll-wrapper">
+                    <div id="buttonCarousel" class="overflow-auto d-flex" style="scroll-behavior: smooth; white-space: nowrap ;" class="d-flex overflow-auto nav-scroll-wrapper">
                         <button class="btn btn-outline-primary mx-1">Security & Email Protection</button>
                         <button class="btn btn-outline-primary mx-1">Infrastructure & Cloud Reliability</button>
                         <button class="btn btn-outline-primary mx-1">Web & Application Solutions</button>
                         <button class="btn btn-outline-primary mx-1">Systems & Process Optimization</button>
                     </div>
+                    <div class="glow-left"></div>
+                    <div class="glow-right"></div>
                 </div>
             </div>
         </div>
@@ -73,7 +75,7 @@
     <section class="m-1 rounded shadow-lg mb-1 border" id="system_Architecture">
         <h3 class="text-primary">System Architecture & DevOps</h3>
         <div class="d-flex flex-wrap">
-            <div class="p-2 col-md-4 mb-4">
+            <!-- <div class="p-2 col-md-4 mb-4">
                 <div class="card h-100 shadow">
                     <div class="card-body">
                         <h5 class="card-title text-primary">Azure Cloud Deployment</h5>
@@ -86,7 +88,7 @@
                         <a href="projects.php?id=azure-deploy" class="btn btn-sm btn-outline-primary mt-2 float-end">View Case Study &rarr;</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="p-2 col-md-4 mb-4">
                 <div class="card h-100 shadow">
@@ -133,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="p-2 col-md-4 mb-4">
+            <!-- <div class="p-2 col-md-4 mb-4">
                 <div class="card h-100 shadow">
                     <div class="card-body">
                         <h5 class="card-title text-primary">AWS/Hestia Troubleshooting</h5>
@@ -146,7 +148,7 @@
                         <a href="projects.php?id=aws-trouble" class="btn btn-sm btn-outline-primary mt-2 float-end">View Case Study &rarr;</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="mx-1 mt-1 rounded shadow-lg mb-1 border"  id="full_stack_development">
@@ -167,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="p-2 col-md-4 mb-4">
+            <!-- <div class="p-2 col-md-4 mb-4">
                 <div class="card h-100 shadow">
                     <div class="card-body">
                         <h5 class="card-title text-primary">Secure CMS Deployment</h5>
@@ -180,7 +182,7 @@
                         <a href="projects.php?id=wp-setup" class="btn btn-sm btn-outline-primary mt-2 float-end">View Case Study &rarr;</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="p-2 col-md-4 mb-4">
                 <div class="card h-100 shadow">
@@ -213,3 +215,35 @@
             </div>
         </div>
     </section>
+<script>
+const slider = document.getElementById('buttonCarousel');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1; // drag speed
+    slider.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+
