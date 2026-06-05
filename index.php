@@ -37,7 +37,7 @@ $assets = [
         ]
     ],
     
-    'favicon' => 'icon/icon.svg'
+    'favicon' => 'icon/icon-white.svg'
 ];
 ?>
 <!DOCTYPE html>

@@ -137,5 +137,11 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
 
     }
+    else{
+        echo "Please fill all the fields";
+    }
+}
+else{
+    echo "Please fill the form to submit your message";
 }
 ?>
