@@ -10,7 +10,7 @@
 
     <title><?php echo $meta['title']; ?></title>
 
-    <link rel="icon" href="<?php echo $htmlroot . $assets['favicon']; ?>" type="image/svg+xml">
+    <link id="favicon" rel="icon" href="<?php echo $htmlroot . $assets['favicon']; ?>" type="image/svg+xml">
     
     <?php foreach ($assets['css'] as $css): ?>
         <?php 

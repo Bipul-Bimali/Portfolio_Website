@@ -3,42 +3,7 @@ include __DIR__. '/config.php';
 ?>
 <?php
 
-$meta = [
-    'charset' => 'UTF-8',
-    'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Bipul Bimali (AirCorp) provides IT consulting for small businesses: secure, reliable, and optimized infrastructure, email protection, cloud services, and system monitoring.',
-    'keywords' => 'IT consultant, small business IT, infrastructure security, system monitoring, cloud consulting, email security, server management, reliable IT systems, business technology solutions',
-    'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "Bipul Bimali | AirCorp IT Consultant for Small Businesses $title" : 'Bipul Bimali | AirCorp IT Consultant for Small Businesses',
-    'og' => [
-        'title' => isset($title) ? "Bipul Bimali | AirCorp IT Consultant for Small Businesses $title" : 'Bipul Bimali | AirCorp IT Consultant for Small Businesses',
-        'description' => 'Bipul Bimali (AirCorp) helps small businesses protect, optimize, and monitor their IT infrastructure. Expertise in secure servers, cloud platforms, email protection, and system reliability.',
-        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
-        'url' => 'https://bipulbimali.com.np/index.php',
-        'type' => 'website'
-    ]
-];
-$assets = [
-    // --- CSS Assets ---
-    'css' => [
-        // 1. Primary Stylesheet
-        [
-            'path' => 'bootstrap-5.3.3/dist/css/bootstrap.min.css',
-            'attributes' => '' 
-        ]
-    ],    
-    'js' => [
-        [
-            'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
-        ],
-        [
-            'path' => 'javascript/main.js',
-            'attributes' => 'defer id="main-script"' 
-        ]
-    ],
-    
-    'favicon' => 'icon/icon-white.svg'
-];
+
 ?>
 <!DOCTYPE html>
 
