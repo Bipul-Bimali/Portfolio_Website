@@ -2,9 +2,45 @@
 include __DIR__. '/config.php';
 ?>
 <?php
-
+$meta = [
+    'charset' => 'UTF-8',
+    'viewport' => 'width=device-width, initial-scale=1.0',
+    'description' => 'Bipul Bimali (AirCorp): Linux Administrator & Cloud Infrastructure Specialist. Building, Securing, and Optimizing enterprise-level systems.',
+    'keywords' => 'Bipul Bimali (AirCorp), Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
+    'author' => 'Bipul Bimali',
+    'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
+    'og' => [
+        'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
+        'description' => 'Hands-on expert in Linux/Unix, enterprise networking and cloud platforms like AWS/Azure, focused on secure and scalable IT solutions.',
+        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+        'url' => 'https://bipulbimali.com.np/index.php',
+        'type' => 'Portfolio website'
+    ]
+];
+$assets = [
+    // --- CSS Assets ---
+    'css' => [
+        // 1. Primary Stylesheet
+        [
+            'path' => 'bootstrap-5.3.3/dist/css/bootstrap.min.css',
+            'attributes' => '' 
+        ]
+    ],    
+    'js' => [
+        [
+            'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
+        ],
+        [
+            'path' => 'javascript/main.js',
+            'attributes' => 'defer id="main-script"' 
+        ]
+    ],
+    
+    'favicon' => 'icon/icon.svg'
+];
 
 ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -37,7 +73,7 @@ With hands-on experience across Linux servers, cloud infrastructure, system moni
                     <div class="card-body">
                         <h5 class="card-title">View Real Infrastructure Projects</h5>
                         <p class="card-text">Explore real-world infrastructure builds, system monitoring setups, cloud deployments, and practical troubleshooting work from hands-on environments and home lab testing.</p>
-                        <a href="https://kenzie.snhu.edu/blog/everything-you-need-to-know-about-a-career-in-web-development/" class="btn btn-primary">Browse Infrastructure Projects</a>
+                        <a href="https://www.bipulbimali.com.np/projects.php" class="btn btn-primary">Browse Infrastructure Projects</a>
                     </div>
                 </div>
             </div>
