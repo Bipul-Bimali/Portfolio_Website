@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Return 404 for files/directories beginning with "."
+RewriteRule (^|/)\.[^/]+(/|$) - [R=404,L]
