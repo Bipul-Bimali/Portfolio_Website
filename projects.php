@@ -163,6 +163,25 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                     ]
                 ];
                 break;
+                case "NetworkSegmentation": 
+                $content1 = "projects/network-segmentation.html";
+                $title = "Network Segmentation ";
+                $meta = [
+                    'charset' => 'UTF-8',
+                    'viewport' => 'width=device-width, initial-scale=1.0',
+                    'description' => 'Designed and deployed an ubuntu  firewall and routing gateway to isolate regular and critical infra networks. Implemented network segmentation, NAT routing, firewall policies and secure traffice control for reloable intrastructure connectivity.',
+                    'keywords' => 'Ubuntu firewall, Linux router, Network, Network segmentation, Routing , NAT, Firewall rules, IP Forwarding , Network Security, Linux Networking, Server intrastructure, Secure Gateway ',
+                    'author' => 'Bipul Bimali',
+                    'title' => isset($title) ? "$title Bipul Bimali" : 'Bipul Bimali',
+                    'og' => [
+                        'title' => isset($title) ? "$title" : 'Bipul Bimali',
+                        'description' => 'A technical overview of building a Linux-based network gateway to separate user devices from server infrastructure using firewall policies, routing, and traffic control.',
+                        'image' => 'https://bipulbimali.com.np/icon/icon.svg',
+                        'url' => 'https://bipulbimali.com.np/index.php',
+                        'type' => 'website'
+                    ]
+                ];
+                break;
             default:
                 $content1 = "projects/default.html";
                 $title = "Projects | Linux Administrator, DevOps & Cybersecurity";
