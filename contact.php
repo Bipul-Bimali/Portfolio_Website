@@ -118,7 +118,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $email = stripslashes($email);
         strpos($email,"@");
         $Message = $_POST['Message'];
-        $statement = "INSERT INTO Messages (`Full Name`, `Email`, `Message`, `Category`) Values ('$name','$email','$Message',NULL)";
+        $statement = "INSERT INTO Messages (`Full Name`, `Email`, `Message`, `Category`) Values ('$name','$email','$Message',NULL,NULL, CURDATE())";
                // echo $statement;
         if($conn->query($statement)){
             require_once $phproot."php/mailconfig.php";
