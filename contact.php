@@ -81,7 +81,6 @@ include $phproot."head.php";
         include $phproot."header.php";
         ?>
         <div class="container">
-            <p class="mb-4">Prefer to talk? Call <a href="tel:+16135184163">(613) 518-4163</a>.</p>
             <form id="form"  class="row"  method="POST" action=""  >
                 <div class="mb-3 col-12 col-sm-6 col-md-4">
                     <label for="name" class="form-label">Full Name</label>
