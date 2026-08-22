@@ -138,7 +138,6 @@ The ultimate objective is clear: design, defend, and strengthen infrastructure a
                 <span>Call <a href="tel:+16135184163">(613) 518-4163</a></span>
                 <span class="d-none d-sm-inline"> </span>
             </span>
-                |
             <span class= "text-center m-auto">
                 &copy; Bipul Bimali. All rights reserved
             </span>
