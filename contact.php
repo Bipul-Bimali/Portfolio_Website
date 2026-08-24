@@ -12,13 +12,13 @@ include __DIR__. '/debug/error.php';
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Contact Bipul Bimali (AirCorp) for Web Development projetcs, Cybersecurity Consultation, or software inquiries, Get a quick response here!',
-    'keywords' => 'Bipul Bimali (AirCorp)contact, cybresecurity consulting, web dev quote, hire developer, reach out',
-    'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
+    'description' => 'Contact AirCorp for Web Development projects, Cybersecurity Consultation, or IT infrastructure inquiries. Get a quick response here!',
+    'keywords' => 'AirCorp contact, cybersecurity consulting, web dev quote, hire IT consultant, reach out',
+    'author' => 'AirCorp',
+    'title' => isset($title) ? "AirCorp | $title" : 'AirCorp | Contact Us',
     'og' => [
-        'title' => "Contact Bipul Bimali -Let's Start a Project",
-        'description' => 'Connect with Bipul Bimali directly for web Development, Cybersecurity, or collaboration opportunities',
+        'title' => "Contact AirCorp - Let's Start a Project",
+        'description' => 'Connect with AirCorp directly for Web Development, Cybersecurity, or collaboration opportunities',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
         'url' => 'https://bipulbimali.com.np/index.php',
         'type' => 'website'

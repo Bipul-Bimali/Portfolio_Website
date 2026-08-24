@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="blank" href="<?php echo $htmlroot;?>contact.php">Contact me</a>
+                        <a class="nav-link" target="blank" href="<?php echo $htmlroot;?>contact.php">Contact Us</a>
                     </li>
                 </ul>
                 <!-- <form class="d-flex" role="search">

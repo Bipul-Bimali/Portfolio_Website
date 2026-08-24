@@ -5,16 +5,16 @@ include __DIR__. '/config.php';
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
-    'description' => 'Bipul Bimali (AirCorp): Linux Administrator & Cloud Infrastructure Specialist. Building, Securing, and Optimizing enterprise-level systems.',
-    'keywords' => 'Bipul Bimali (AirCorp), Linux Administrator, AWS, Azure, Network Monitoring, System Analyst, Cybersecurity, Infrastructure, CloudComputing.',
-    'author' => 'Bipul Bimali',
-    'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
+    'description' => 'AirCorp: IT Infrastructure & Cloud Security Consultancy. Building, Securing, and Optimizing enterprise-level systems for small and growing businesses.',
+    'keywords' => 'AirCorp, IT Infrastructure Consulting, Linux Administration, AWS, Azure, Network Monitoring, Cybersecurity, Infrastructure, Cloud Computing.',
+    'author' => 'AirCorp',
+    'title' => isset($title) ? "AirCorp | $title" : 'AirCorp | IT Infrastructure & Security Consultancy',
     'og' => [
-        'title' => isset($title) ? "Bipul Bimali | AirCorp $title" : 'Bipul Bimali | AirCorp',
-        'description' => 'Hands-on expert in Linux/Unix, enterprise networking and cloud platforms like AWS/Azure, focused on secure and scalable IT solutions.',
+        'title' => isset($title) ? "AirCorp | $title" : 'AirCorp | IT Infrastructure & Security Consultancy',
+        'description' => 'AirCorp is a hands-on IT infrastructure consultancy specializing in Linux/Unix, enterprise networking, and cloud platforms like AWS/Azure, focused on secure and scalable solutions.',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
         'url' => 'https://bipulbimali.com.np/index.php',
-        'type' => 'Portfolio website'
+        'type' => 'website'
     ]
 ];
 $assets = [
@@ -54,25 +54,25 @@ include $phproot."header.php";
     <Section class="container-fluid">
         <div class="row align-items-center justify-content-around">
             <div class="col-12 col-sm-7 col-md-8 justify-content-around">
-                <p class="lead fw-bold">Hi, this is </p>
-                <h1 class="px-3 text-primary  fw-bold display-4">Bipul Bimali</h1>
-                <h2 class=" px-5 text-info">IT Infrastructure & Security Consultant for Small Businesses</h2>
-                <p class="klead mt-4"><strong>Bipul Bimali</strong> helps small and growing businesses keep their technology secure, reliable, and running without interruption.</p>
+                <p class="lead fw-bold">Welcome to</p>
+                <h1 class="px-3 text-primary  fw-bold display-4">AirCorp</h1>
+                <h2 class=" px-5 text-info">IT Infrastructure & Security Consulting for Small Businesses</h2>
+                <p class="klead mt-4"><strong>AirCorp</strong> helps small and growing businesses keep their technology secure, reliable, and running without interruption.</p>
 
 <p>
-Many small businesses rely on technology but lack dedicated infrastructure expertise. Bipul focuses on identifying weaknesses, improving reliability, and protecting critical systems before problems become costly failures.
+Many small businesses rely on technology but lack dedicated infrastructure expertise. We focus on identifying weaknesses, improving reliability, and protecting critical systems before problems become costly failures.
 </p>
 
 <p>
-With hands-on experience across Linux servers, cloud infrastructure, system monitoring, and network operations, he works directly with real systems — building, breaking, and fixing them to ensure they remain secure and dependable in real-world environments.
+With hands-on experience across Linux servers, cloud infrastructure, system monitoring, and network operations, our team works directly with real systems — building, testing, and hardening them to ensure they remain secure and dependable in real-world environments.
 </p>
             </div>
             <div class="col-12 mt-4 col-sm-5 col-md-4">
                 <div class="card" style="min-width: 18rem;">
                     <img src="images/web_developer.jpg" class="card-img-top" alt="I am a Web developer">
                     <div class="card-body">
-                        <h5 class="card-title">View Real Infrastructure Projects</h5>
-                        <p class="card-text">Explore real-world infrastructure builds, system monitoring setups, cloud deployments, and practical troubleshooting work from hands-on environments and home lab testing.</p>
+                        <h5 class="card-title">View Our Infrastructure Projects</h5>
+                        <p class="card-text">Explore real-world infrastructure builds, system monitoring setups, cloud deployments, and practical troubleshooting work from our hands-on client and lab environments.</p>
                         <a href="https://www.bipulbimali.com.np/projects.php" class="btn btn-primary">Browse Infrastructure Projects</a>
                     </div>
                 </div>
@@ -112,28 +112,27 @@ My approach is simple: identify weaknesses early, solve them properly, and ensur
                 <img style="max-width:100%;object-fit:cover" src="images/vision.jpg" alt="">
             </div>
             <div class="col-11 text-center col-sm-8 col-md-9">
-                <h3 class=" h1  my-4  text-center text-light">My Vision</h3>
+                <h3 class=" h1  my-4  text-center text-light">Our Vision</h3>
                 <p class="text-light" >
-                    My long-term goal is to become a leading expert in infrastructure security and cybersecurity engineering.
-                </p><!--
-                <p class="text-light">I am starting  my journey with a firm grasp on programming and web development </p> -->
-                
+                    Our long-term goal is to be a leading name in infrastructure security and cybersecurity engineering for small businesses.
+                </p>
+
 <p class="text-light">
-This journey begins with mastering the systems that modern businesses depend on every day — servers, networks, monitoring systems, and cloud infrastructure.
+This starts with mastering the systems that modern businesses depend on every day — servers, networks, monitoring systems, and cloud infrastructure.
 </p>
 
 <p class="text-light">
-By understanding how systems are built, operated, and sometimes fail, I continue developing the skills required to identify weaknesses and secure complex digital environments.
+By understanding how systems are built, operated, and sometimes fail, we continue developing the expertise required to identify weaknesses and secure complex digital environments.
 </p>
 
 <p class="text-light">
-The ultimate objective is clear: design, defend, and strengthen infrastructure against real-world threats.
+The objective is clear: design, defend, and strengthen infrastructure against real-world threats.
 </p>
             </div>
         </div>
     </section>
     <footer class="container-fluid bg-body-secondary">
-        <div class="py-5 text-center">&copy; Bipul Bimali. All rights reserved</div>
+        <div class="py-5 text-center">&copy; AirCorp. All rights reserved</div>
 
     </footer>
 </body>
