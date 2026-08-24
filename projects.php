@@ -84,17 +84,17 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                 $content1 = "projects/hestia.html";
                 break;
             case "php-portfolio":
-                $title = "Modular PHP Portfolio | Scalable Architecture, Config Separation & Reusable Components";
+                $title = "Modular PHP Site Architecture | Scalable Architecture, Config Separation & Reusable Components";
                 $meta = [
                     'charset' => 'UTF-8',
                     'viewport' => 'width=device-width, initial-scale=1.0',
-                    'description' => 'A modular PHP portfolio project by AirCorp showcasing scalable architecture, config separation, reusable components, and clean code structure. Built for extensibility, maintainability, and future expansion with dynamic routing and structured UI blocks.',
-                    'keywords' => 'Modular PHP Portfolio, PHP Architecture, Config Separation, Reusable Components, Scalable PHP Design, Backend Development, PHP Refactoring, Clean Code, Bootstrap UI, Version Control, Dynamic Routing, Web Development Projects',
+                    'description' => 'A modular PHP site architecture project by AirCorp showcasing scalable architecture, config separation, reusable components, and clean code structure. Built for extensibility, maintainability, and future expansion with dynamic routing and structured UI blocks.',
+                    'keywords' => 'Modular PHP Architecture, PHP Architecture, Config Separation, Reusable Components, Scalable PHP Design, Backend Development, PHP Refactoring, Clean Code, Bootstrap UI, Version Control, Dynamic Routing, Web Development Projects',
                     'author' => 'AirCorp',
                     'title' => isset($title) ? "$title | AirCorp" : 'AirCorp',
                     'og' => [
                         'title' => isset($title) ? "$title" : 'AirCorp',
-                        'description' => 'A fully modular PHP portfolio system featuring reusable components, config separation, scalable architecture, and clean backend design for easy expansion and maintainability.',
+                        'description' => 'A fully modular PHP site architecture featuring reusable components, config separation, scalable design, and clean backend structure for easy expansion and maintainability.',
                         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
                         'url' => 'https://bipulbimali.com.np/index.php',
                         'type' => 'website'
@@ -175,7 +175,7 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                     'title' => isset($title) ? "$title | AirCorp" : 'AirCorp',
                     'og' => [
                         'title' => isset($title) ? "$title" : 'AirCorp',
-                        'description' => 'Hands-on projects: penetration testing, cloud deployment, network monitoring, PHP portfolio, and secure system recovery.',
+                        'description' => 'Hands-on projects: penetration testing, cloud deployment, network monitoring, modular PHP architecture, and secure system recovery.',
                         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
                         'url' => 'https://bipulbimali.com.np/index.php',
                         'type' => 'website'
