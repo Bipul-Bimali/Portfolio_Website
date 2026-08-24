@@ -14,7 +14,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="blank" href="https://lesfs.ca">LES Financial Services</a>
+                        <a class="nav-link" target="blank" href="https://www.theghostparadise.com">The Ghost Paradise</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
