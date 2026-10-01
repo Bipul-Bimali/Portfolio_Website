@@ -133,8 +133,15 @@ The ultimate objective is clear: design, defend, and strengthen infrastructure a
         </div>
     </section>
     <footer class="container-fluid bg-body-secondary">
-        <div class="py-5 text-center">&copy; Bipul Bimali. All rights reserved</div>
-
+        <div class="py-3 d-flex flex-column flex-sm-row justify-content-center align-items-center text-center gap-2">
+            <span class="m-auto">
+                <span>Call <a href="tel:+16135184163">(613) 518-4163</a></span>
+                <span class="d-none d-sm-inline"> </span>
+            </span>
+            <span class= "text-center m-auto">
+                &copy; Bipul Bimali. All rights reserved
+            </span>
+        </div>
     </footer>
 </body>
 </html>
