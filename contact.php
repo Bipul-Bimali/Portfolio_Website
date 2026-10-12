@@ -3,11 +3,7 @@ include __DIR__. '/config.php';
 ?>
 
 
-
-
-
 <?php
-
 $meta = [
     'charset' => 'UTF-8',
     'viewport' => 'width=device-width, initial-scale=1.0',
@@ -23,8 +19,6 @@ $meta = [
         'type' => 'website'
     ]
 ];
-
-
 
 $assets = [
     // --- CSS Assets ---
@@ -67,13 +61,15 @@ $assets = [
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
+
+
 <?php 
 include $phproot."head.php";
 ?>
+
+
 <script src="<?php echo $htmlroot;?>javascript/validation.js"></script>
 <body data-bs-theme="dark">
     <main> 
@@ -105,12 +101,20 @@ include $phproot."head.php";
     </main>
 </body>
 </html>
+
+
 <?php
+function getPostClientIp(): ?string
+{
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        return null;
+    }
+
+    return $_SERVER['REMOTE_ADDR'] ?? null;
+}
 require_once $phproot."php/Dbconn.php";
-
-
-
 if($_SERVER['REQUEST_METHOD']=="POST"){
+
     if($_POST["Full_name"]&&$_POST["Email"]&&$_POST["Message"]){
         $name = $_POST['Full_name'];
         $name = stripslashes($name);
@@ -118,29 +122,29 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $email = stripslashes($email);
         strpos($email,"@");
         $Message = $_POST['Message'];
-        $statement = "INSERT INTO Messages (`Full Name`, `Email`, `Message`, `Category`, `my_date`) Values ('$name','$email','$Message',NULL, CURDATE())";
-               // echo $statement;
-        if($conn->query($statement)){
-            require_once $phproot."php/mailconfig.php";
-          if (sendContactMail($name, $email, $Message, $mailConfig)) {
-              echo "Message has been submitted and email sent.";
-          }
-          else {
-            echo "Message saved, but email could not be sent.";
-          }
-
+        $ip = getPostClientIp();
+        $statement = $conn->prepare("INSERT INTO Messages (`Full Name`, `Email`, `Message`,`my_date`,`IP`, `Category`) VALUES (?, ?, ?,NOW(),? , Portfolio)");
+        if ($statement){ 
+            $statement->bind_param("ssss", $name, $email, $Message,$ip);
+            if($statement->execute()){
+                require_once $phproot."php/mailconfig.php";
+                if (sendContactMail($name, $email, $Message, $mailConfig)) {
+                    echo "Message has been submitted and email sent.";
+                }
+                else {
+                    echo "Message saved, but email could not be sent.";
+                }
+            }
+            else{
+                echo "Error sending message try again Later";
+                location:'./index.php';
+            }
         }
-        else{
-            echo "Error sending message try again Later";
-            location:'./index.php';
-        }
-
-
-    }
+    }   
     else{
-        echo "Please fill all the fields";
-    }
-}
+            echo "Please fill all the fields";
+    }   
+}   
 else{
     echo "Please fill the form to submit your message";
 }
