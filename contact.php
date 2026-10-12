@@ -123,7 +123,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         strpos($email,"@");
         $Message = $_POST['Message'];
         $ip = getPostClientIp();
-        $statement = $conn->prepare("INSERT INTO Messages (`Full Name`, `Email`, `Message`,`my_date`,`IP`, `Category`) VALUES (?, ?, ?,NOW(),? , Portfolio)");
+        $statement = $conn->prepare("INSERT INTO Messages (`Full Name`, `Email`, `Message`,`my_date`,`IP`, `Category`) VALUES (?, ?, ?,NOW(),? , 'Portfolio')");
         if ($statement){ 
             $statement->bind_param("ssss", $name, $email, $Message,$ip);
             if($statement->execute()){
