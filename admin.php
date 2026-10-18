@@ -3,7 +3,7 @@ session_start();
 header("Content-Type: text/html; charset=UTF-8");
 
 // Load DB credentials (protected by .htaccess)
-require __DIR__ . "/php/DB_readonly.php";
+require __DIR__ . "/php/Dbconn.php";
 
 // ---------------------- API HANDLER ----------------------
 if (isset($_GET['api'])) {
