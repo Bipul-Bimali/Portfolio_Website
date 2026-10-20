@@ -1,3 +1,13 @@
+<?php
+function asset_url($path, $root = '') {
+    if (preg_match('#^(https?:)?//#i', $path)) {
+        return $path;          // full URL, use as-is
+    }
+    return $root . $path;      // local path, add $htmlroot like before
+}
+
+?>
+
 <head>
     <meta charset="<?php echo $meta['charset']; ?>">
     <meta name="viewport" content="<?php echo $meta['viewport']; ?>">
@@ -30,7 +40,7 @@
             continue; 
         endif;
         ?>
-        <link rel="stylesheet" href="<?php echo $htmlroot . $path; ?>" <?php echo $attributes; ?>>
+        <link rel="stylesheet" href="<?php echo asset_url($path, $htmlroot); ?>" <?php echo $attributes; ?>>
     <?php endforeach; ?>
 
     <?php foreach ($assets['js'] as $js): ?>
@@ -51,6 +61,6 @@
             continue; 
         endif;
         ?>
-        <script src="<?php echo $htmlroot . $path; ?>" <?php echo $attributes; ?>></script>
+        <script src="<?php echo asset_url($path, $htmlroot); ?>" <?php echo $attributes; ?>></script>
     <?php endforeach; ?>
 </head>
