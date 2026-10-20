@@ -28,7 +28,7 @@ $assets = [
     ],    
     'js' => [
         [
-            'path' => 'https://www.bipulbimali.com.np/bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
+            'path' => 'bootstrap-5.3.3/dist/js/bootstrap.bundle.js'
         ],
         [
             'path' => 'javascript/main.js',

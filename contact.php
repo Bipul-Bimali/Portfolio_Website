@@ -50,8 +50,8 @@ $assets = [
         ],
         // 3. Example: External script that requires 'async'
         [
-            // 'path' => 'https://example.com/analytics.js',
-            // 'attributes' => 'async' 
+             'path' => 'https://challenges.cloudflare.com/turnstyle/v0/api.js',
+             'attributes' => 'async defer' 
         ]
     ],
     
@@ -95,6 +95,10 @@ include $phproot."head.php";
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> -->
+
+                <div class="col-12 mb-3">
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAFajSJOncyEcYEKy" data-action="contact" data-theme="dark"></div>
+                </div>
                 <button type="submit" style="min-width: fit-content;" class="btn mx-2 mb-3 mt-4 col-2 col-sm-3 col-md-2 btn-primary">Submit</button>
             </form>
         </div>
@@ -104,6 +108,38 @@ include $phproot."head.php";
 
 
 <?php
+function VerifyTurnstile(string $token, string $ip, string $phproot): bool {
+    $cfg = require $phproot."php/turnstile.php";
+    if ($token === '' || strlen($token) > 2048 ||  empty($cfg['secret']) || empty($cfg['hostnames'])) {
+        return false ;
+    }
+
+
+//test 
+$fields = ['secret' => $cfg['secret'], 'response' => $token];
+$ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => http_build_query($fields),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_CONNECTTIMEOUT => 5,
+        CURLOPT_TIMEOUT        => 10,
+    ]);
+
+    $raw  = curl_exec($ch);
+    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    if ($raw === false || $code !== 200) return false;   // fail closed
+    $r = json_decode($raw, true);
+    return is_array($r)
+        && ($r['success'] ?? false) === true
+        && ($r['action'] ?? '') === 'contact'
+        && in_array($r['hostname'] ?? '', $cfg['hostnames'], true);
+
+
+
+}
+
 function getPostClientIp(): ?string
 {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -113,9 +149,16 @@ function getPostClientIp(): ?string
     return $_SERVER['REMOTE_ADDR'] ?? null;
 }
 require_once $phproot."php/Dbconn.php";
+require_once $phproot."php/turnstile.php";
 if($_SERVER['REQUEST_METHOD']=="POST"){
 
-    if($_POST["Full_name"]&&$_POST["Email"]&&$_POST["Message"]){
+$token = is_string($_POST['cf-turnstile-response'] ?? null) ? $_POST['cf-turnstile-response'] : '';
+
+    if (!VerifyTurnstile($token, $_SERVER['REMOTE_ADDR'] ?? '', $phproot)) {
+        echo "Verification failed. Please reload the page and try again.";
+    }
+
+    elseif($_POST["Full_name"]&&$_POST["Email"]&&$_POST["Message"]){
         $name = $_POST['Full_name'];
         $name = stripslashes($name);
         $email = $_POST['Email'];
