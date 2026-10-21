@@ -57,8 +57,8 @@ $assets = [
         ],
         // 3. Example: External script that requires 'async'
         [
-            // 'path' => 'https://example.com/analytics.js',
-            // 'attributes' => 'async' 
+             'path' => 'https://challanges.cloudflare.com/turnstyle/v0/api.js',
+             'attributes' => 'async defer' 
         ]
     ],
     
@@ -113,13 +113,16 @@ function getPostClientIp(): ?string
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         return null;
     }
-
     return $_SERVER['REMOTE_ADDR'] ?? null;
 }
 require_once $phproot."php/Dbconn.php";
+require_once $phproot."php/turnstile.php";
 if($_SERVER['REQUEST_METHOD']=="POST"){
-
-    if($_POST["Full_name"]&&$_POST["Email"]&&$_POST["Message"]){
+    $token = is_string($_POST['cf-turnstile-response'] ?? null) ? $_POST['cf-turnstile-response'] : '';
+    if (!VerifyTurnstile($token, $_SERVER['REMOTE_ADDR'] ?? '', $phproot)) {
+        echo "Verification failed. Please reload the page and try again.";
+        }
+    elseif($_POST["Full_name"]&&$_POST["Email"]&&$_POST["Message"]){
         $name = $_POST['Full_name'];
         $name = stripslashes($name);
         $email = $_POST['Email'];
@@ -146,7 +149,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         }
     }   
     else{
-            echo "Please fill all the fields";
+        echo "Please fill all the fields";
     }   
 }   
 else{
