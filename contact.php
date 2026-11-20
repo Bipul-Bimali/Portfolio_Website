@@ -15,7 +15,7 @@ $meta = [
         'title' => "Contact Bipul Bimali -Let's Start a Project",
         'description' => 'Connect with Bipul Bimali directly for web Development, Cybersecurity, or collaboration opportunities',
         'image' => 'https://bipulbimali.com.np/icon/icon.svg',
-        'url' => 'https://bipulbimali.com.np/index.php',
+        'url' => 'https://bipulbimali.com.np/contact.php',
         'type' => 'website'
     ]
 ];
@@ -116,8 +116,8 @@ function VerifyTurnstile(string $token, string $ip, string $phproot): bool {
 
 
 //test 
-$fields = ['secret' => $cfg['secret'], 'response' => $token];
-$ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
+    $fields = ['secret' => $cfg['secret'], 'response' => $token];
+    $ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
     curl_setopt_array($ch, [
         CURLOPT_POST           => true,
         CURLOPT_POSTFIELDS     => http_build_query($fields),
@@ -135,9 +135,6 @@ $ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
         && ($r['success'] ?? false) === true
         && ($r['action'] ?? '') === 'contact'
         && in_array($r['hostname'] ?? '', $cfg['hostnames'], true);
-
-
-
 }
 
 function getPostClientIp(): ?string
@@ -145,15 +142,12 @@ function getPostClientIp(): ?string
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         return null;
     }
-
     return $_SERVER['REMOTE_ADDR'] ?? null;
 }
 require_once $phproot."php/Dbconn.php";
 require_once $phproot."php/turnstile.php";
 if($_SERVER['REQUEST_METHOD']=="POST"){
-
-$token = is_string($_POST['cf-turnstile-response'] ?? null) ? $_POST['cf-turnstile-response'] : '';
-
+    $token = is_string($_POST['cf-turnstile-response'] ?? null) ? $_POST['cf-turnstile-response'] : '';
     if (!VerifyTurnstile($token, $_SERVER['REMOTE_ADDR'] ?? '', $phproot)) {
         echo "Verification failed. Please reload the page and try again.";
     }
@@ -184,11 +178,11 @@ $token = is_string($_POST['cf-turnstile-response'] ?? null) ? $_POST['cf-turnsti
             }
         }
     }   
-    else{
-            echo "Please fill all the fields";
+    else {
+        echo "Please fill all the fields";
     }   
 }   
-else{
+else {
     echo "Please fill the form to submit your message";
 }
 ?>
