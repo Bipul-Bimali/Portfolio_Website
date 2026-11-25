@@ -50,7 +50,7 @@ $assets = [
         ],
         // 3. Example: External script that requires 'async'
         [
-             'path' => 'https://challenges.cloudflare.com/turnstyle/v0/api.js',
+             'path' => 'https://challenges.cloudflare.com/turnstile/v0/api.js',
              'attributes' => 'async defer' 
         ]
     ],
